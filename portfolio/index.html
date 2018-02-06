@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>I am Mike</title>
+    <link rel='stylesheet' type="text/css" href='css/index.css'>
+    <link rel='stylesheet' type="text/css" href='css/mainMenu.css'>
+    <link rel='stylesheet' type="text/css" href='css/font-awesome.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!--    ANIMATE LIBRARY-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+    <!--    JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    
+</head>
+
+<body>
+    <div class="preload" id="preload">
+    </div>
+    <div class="content" id='content'>
+        <section class="mainSection" id="mainSection">
+            <div class="videoFilter">
+                <video autoplay muted class="video">
+                        <source src="img/giff.mp4" type="video/mp4">
+                        <source src="img/giff.webm" type="video/webm">
+                        <source src="img/giff.ogv" type="video/ogg">
+        </video>
+            </div>
+            <div class="halfLeft">
+                <!--
+            <a href='#'class="icon animated fadeInLeft"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href='#'class="icon animated fadeInRight"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href='#'class="icon animated fadeInLeft"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+-->
+            </div>
+            <div class="halfRight">
+                <div class="mainTitle">
+                    <!--                <div class='mainLine'></div>-->
+                    <h1 class='animated fadeInLeft'>Mike</h1>
+                    <p class='animated fadeInRight'>Front-End Developer</p>
+                    <div class="menuResponsive">
+                        <p id="openMenu">Open Menu</p>
+                    </div>
+                    <div id="slider" class="slider">
+                        <!--                    <div class="sliderDiv">-->
+                        <div class="progress"></div>
+                        <div class="indicator">
+                            <div></div>
+                        </div>
+                        <!--                    </div>-->
+                        <div class="tip animated fadeIn">
+                            slide to unlock
+                        </div>
+                    </div>
+                    <!--                <input type="text" id="value">-->
+                </div>
+                <div class="mainInformation">
+                    <p>M</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu" id="mainMenu">
+        </section>
+    </div>
+    <script src="js/drag.js"></script>
+    <script src="js/index.js"></script>
+    <script type='text/javascript'>
+        window.onload = detectarCarga;
+
+        function detectarCarga() {
+            setTimeout(function() {
+                document.getElementById("preload").style.opacity = "0";
+                document.getElementById("preload").style.zIndex = "0";
+            }, 500)
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Portfolio</title>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' type="text/css" href='css/portfolio.css'>
+    <link rel='stylesheet' type="text/css" href='css/font-awesome.min.css'>
+    <link rel='stylesheet' type="text/css" href='css/menu.css'>
+    <link rel='stylesheet' type="text/css" href='css/animate.css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!--    ANIMATE LIBRARY-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+    <!--    JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <!--        THIS IS THE META FOR IOS-->
+    <meta name="viewport" content="width=590">
+    
+</head>
+
+<body>
+    <div class="preload" id="preload"></div>
+    <div class="portfolioSection">
+        <div class="background">
+            <div class="mike">
+                <h1 class='animated fadeInLeft'>Some Projects</h1>
+                <p class='animated fadeInRight'>The truth is that I've have not got the oportunity to work in any company as a front-end developer yet. Basically because I didn't even know I wanted to be one.
+                    <br>By the way, here is a selection of some of the coolest projects I've done:</p>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="secondMenu" id="secondMenu">
+            <input type="checkbox" />
+            <span class="menuBar"></span>
+            <span class="menuBar"></span>
+            <span class="menuBar"></span>
+        </div>
+
+        <div class="title">
+            <!--
+            <h1>Some Projects</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros ligula, vestibulum sit amet dictum in, ornare a dui.<br> Vivamus congue tellus vitae mi dictum, nec molestie lectus eleifend.</p>
+-->
+        </div>
+
+        <div class="portfolio" id="portfolio">
+        </div>
+    </div>
+
+    <div class='menu display' id="menu"></div>
+
+    <script src="js/index.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/portfolioInfo.js"></script>
+     <script type='text/javascript'>
+        window.onload = detectarCarga;
+
+        function detectarCarga() {
+            setTimeout(function(){
+                document.getElementById("preload").style.opacity = "0";
+                document.getElementById("preload").style.zIndex = "0";
+            },500)
+        }
+    </script>
+</body>
+
+</html>
