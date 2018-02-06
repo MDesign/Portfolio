@@ -410,6 +410,7 @@
         transition: .5s all;
         cursor: pointer;
         margin-bottom: 50px;
+        z-index: 54;
     }
 
     .getBack a {
@@ -754,6 +755,7 @@
         transition: .5s all;
         cursor: pointer;
         margin-bottom: 50px;
+        z-index: 54;
     }
 
     .getBack a {
@@ -1091,6 +1093,7 @@
         transition: .5s all;
         cursor: pointer;
         margin-bottom: 50px;
+        z-index: 54;
     }
 
     .getBack a {
