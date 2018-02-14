@@ -34,13 +34,13 @@
                     <h2 class="animated fadeInLeft">Tell me how can I <span>help you</span></h2>
                     <p class="animated fadeInRight">And I will</p>
                 </div>
-                <div class="form">
-                    <input type="text" class='input' placeholder='Name'>
-                    <input type="email" class='input' placeholder='Email'>
-                    <input type="text" class='input' placeholder='Phone'>
-                    <textarea class='input' placeholder='Message'></textarea>
-                    <input type="submit" class='sendMessage' value='Send your S.O.S'></textarea>
-                </div>
+                <form class="form" action='form.php' method='post'>
+                    <input type="text" class='input' name='Name' required placeholder='Name'>
+                    <input type="email" class='input' name='Email' required placeholder='Email'>
+                    <input type="text" class='input' name='Phone' placeholder='Phone'>
+                    <textarea class='input' name='Message' required placeholder='Message'></textarea>
+                    <input type="submit" class='sendMessage' value='Send your S.O.S'>
+                </form>
             </div>
             <div class="halfRight">
             </div>
