@@ -23,9 +23,9 @@ $header .= "Mime-Version: 1.0 \r\n";
 $header .= "Content-Type : text/plain";
 
 $content = 'Message sent by: ' .$name .',\r\n';
-$content = 'His/Her e-mail is: ' .$email .' \r\n';
-$content = 'Message: ' .$message .' \r\n';
-$content = 'Sent on ' .date('d/m/Y', time());
+$content .= 'His/Her e-mail is: ' .$email .' \r\n';
+$content .= 'Message: ' .$message .' \r\n';
+$content .= 'Sent on ' .date('d/m/Y', time());
     
 
 //echo '<H1>User Info</H1>';
@@ -34,7 +34,7 @@ $content = 'Sent on ' .date('d/m/Y', time());
 //echo "User's phone: " .$phone .'<br/>'; 
 //echo "User's message: " .$message .'<br/>'; 
 
-$to = 'miquelcosta@iam-mike.com';
+$to = 'queel93@gmail.com';
 $affair = 'Message from my Portfolio';
     
 mail($to, $affair, $content, $header);

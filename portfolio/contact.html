@@ -16,7 +16,7 @@
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <meta name="viewport" content="width=590">
-
+    
 </head>
 
 <body>
@@ -29,24 +29,17 @@
     </div>
     <div class="content" id='content'>
         <section class="contactSection">
-            <div class="divError" id="divError">
-                <div class="warnings">
-                    <div class="close">X</div>
-                    <div class="thanks">Thank you!</div>
-                    <div class="text"></div>
-                </div>
-            </div>
             <div class="halfLeft">
                 <div class="contactTitle">
                     <h2 class="animated fadeInLeft">Tell me how can I <span>help you</span></h2>
                     <p class="animated fadeInRight">And I will</p>
                 </div>
-                <form class="form" action='form.php' method='post' onsubmit="return formValidate();">
-                    <input type="text" class='input' name='Name' placeholder='Name' autocomplete="off" id='nameForm'>
-                    <input type="text" class='input' name='Email' placeholder='Email' autocomplete="off" id='emailForm'>
-                    <input type="text" class='input' name='Phone' placeholder='Phone' autocomplete="off" id='phoneForm'>
-                    <textarea class='input' name='Message' placeholder='Message' id='messageForm'></textarea>
-                    <input type="submit" class='sendMessage' id='submit' value='Send your S.O.S' name='Submit'>
+                <form class="form" action='form.php' method='post'>
+                    <input type="text" class='input' name='Name' placeholder='Name'>
+                    <input type="email" class='input' name='Email' placeholder='Email'>
+                    <input type="text" class='input' name='Phone' placeholder='Phone'>
+                    <textarea class='input' name='Message' placeholder='Message'></textarea>
+                    <input type="submit" class='sendMessage' value='Send your S.O.S'>
                 </form>
             </div>
             <div class="halfRight">
@@ -56,17 +49,15 @@
     </div>
 
     <script src="js/index.js"></script>
-    <script src="js/validate.js"></script>
-    <script type='text/javascript'>
+     <script type='text/javascript'>
         window.onload = detectarCarga;
 
         function detectarCarga() {
-            setTimeout(function() {
+            setTimeout(function(){
                 document.getElementById("preload").style.opacity = "0";
                 document.getElementById("preload").style.zIndex = "0";
-            }, 500)
+            },500)
         }
-
     </script>
 </body>
 
